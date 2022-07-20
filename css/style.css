@@ -1,0 +1,64 @@
+/*----------------
+Main css
+------------------ */
+body{
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+/*-----------------
+    header css
+-------------------- */
+.first{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    background-color:#161616 ;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.first .first-blog{
+    width: 50%;  
+}
+.first .first-blogs{
+    margin: 4% 0 4% 7% ;
+    width: 35%; 
+}
+.first .first-blog img{
+    width: 90%;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.first .first-blog h1{
+    font-size: 55px;
+    font-weight: 900;
+    color: white;
+    
+}
+.first .first-blog p{
+    color: white; 
+    font-size: 14px;
+}
+.first-blog img{
+    align-items: center;
+}
+/* ------------------
+    Buttons
+---------------------- */
+.first .first-blog .buttons{
+    background-color: #DD0000;
+    border-radius: 4px;
+    
+    padding: 15px 35px;
+    border: none;
+    font-size: 17px;
+    margin-top: 10px;
+}
+.first .first-blog .buttons a{
+    text-decoration: none;
+    color: white;
+}
