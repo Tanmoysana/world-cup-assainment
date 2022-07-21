@@ -1,60 +1,51 @@
-/*----------------
-Main css
------------------- */
-body{
-    font-family: 'Open Sans', sans-serif;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-
-}
-    /* ---------------------------------------------
-              @media screen only laptop or higher
+/* ---------------------------------------------
+              @media screen only mobile devices
 -----------------------------------------------*/
-@media screen and (min-width:1025px){
-    
-
-    /*-----------------
+@media screen and (min-width:150px) and (max-width:766px){
+    .secrect-button{
+        display: none;
+    }
+/*-----------------
         header css
     -------------------- */
     .first{
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
-        display: flex;
         background-color:#161616 ;
         align-items: center;
         border-radius: 10px;
         margin-top: 40px;
-        margin-bottom: 100px;
-        height: 646px;
+        margin-bottom: 40px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
     .first:hover{
         box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
-    }
-    .first .first-blog{
-        width: 50%;  
-    }
-    .first .first-blogs{
+    } .first-blogs{
         padding-top: 2% ;
         padding-left: 8% ;
         padding-bottom: 2% ;
-        width: 35%; 
+        width: 100%; 
+        align-items: center;
+        width: 80%;
     }
     .first .first-blog img{
-        width: 95%;
-        margin-top: 40px;
-        margin-left: 25px;
+        width: 100%;
+        padding-top: 10px;
     }
 
     .first .first-blog h1{
-        font-size: 55px;
+        font-size: 35px;
         font-weight: 900;
         color: white;
+        text-align: center;
         
     }
     .first .first-blog p{
         color: white; 
-        font-size: 14px;
+        font-size: 10px;
+        text-align: center;
+        padding-bottom: 10px;
     }
     .first-blog img{
         align-items: center;
@@ -65,11 +56,14 @@ body{
     .first .first-blog .buttons{
         background-color: #DD0000;
         border-radius: 4px;
-        padding: 15px 35px;
+        padding: 10px 25px;
         border: none;
         font-size: 17px;
-        margin-top: 10px;
+        margin: auto;
+        align-items: center;
+        display: block;
     }
+   
     .first .first-blog .buttons a{
         text-decoration: none;
         color: white;
@@ -80,26 +74,22 @@ body{
     .second-blog{
         width: 90%;
         margin: 0 auto;
-        display: flex;
     }
-
+     /* button-2 */
     .buttons-2{
-        background-color: #161616;
-        padding-left: 30px;
-        padding-right: 30px;
+        margin: auto;
         border-radius: 10px;
-        width: 30%;
-        height: 50%;
-        padding-bottom: 30px;
+        width: 60%;
+        padding-bottom: 20px;
 
     }
     .buttons-2 button{
         display: block;
         border-radius: 7px;
-        padding: 25px;
+        padding: 9%;
         border: none;
-        font-size: 20px;
-        margin-top: 30px;
+        font-size: 15px;
+        margin-top: 20px;
         width: 100%;
         font-weight: 600;
         white-space: nowrap;
@@ -110,8 +100,8 @@ body{
     }
     .block-2{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
         margin-left: 20px;
         gap: 20px;
         
@@ -154,9 +144,9 @@ body{
     footer h2{
         color: white;
         text-align: center;
-        padding-top:100px ;
-        font-size: 35px;
-        padding-bottom:30px ;
+        padding-top:30px ;
+        font-size: 18px;
+        padding-bottom:10px ;
     }
     hr{
     width: 80%;
@@ -168,41 +158,44 @@ body{
     }
     .footer{
         color: #A8A8A8;
-        display: flex;
         width: 70%;
         margin: auto;
-        justify-content: space-around;   
+        display: grid;  
+    }
+    h5{
+        text-align: center;  
     }
     .icon{
         width: 15%;
         margin: auto;
         display: flex;
-        justify-content: space-around;   
+        justify-content: space-around; 
+        padding: 10px;  
     }
 
     .fa-facebook-square{
-    font-size: 50px;
+    font-size: 30px;
     color: #026EAA;
     }
     .fa-facebook-square:hover{
         box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
     }
     .fa-instagram-square{
-        font-size: 50px;
+        font-size: 30px;
         color: #941f1f;
     }
     .fa-instagram-square:hover{
         box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
     }
     .fa-twitter-square{
-        font-size: 50px;
+        font-size: 30px;
         color: #00A4E0;
     }
     .fa-twitter-square:hover{
         box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
     }
     .fa-linkedin{
-        font-size: 50px;
+        font-size: 30px;
         color: #026EAA;
     }
     .fa-linkedin:hover{
@@ -211,8 +204,4 @@ body{
     /*--------------------------------------------
                     footer end
     ---------------------------------------------- */
-    .secrect-button{
-        display: none;
-    }
 }
-
